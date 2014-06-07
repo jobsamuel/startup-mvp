@@ -1,4 +1,4 @@
-// MVP server v0.1
+// Carrito-MVP Web Server - v0.1
 // Jobsamuel Núñez. All right reserved 2014.
 
 var express = require('express');
