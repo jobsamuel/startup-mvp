@@ -1,2 +1,3 @@
-carrito-mvp
-===========
+# Carrito Minimum Viable Product
+
+// TODO
