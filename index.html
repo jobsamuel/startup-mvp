@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="appController">
+<head>
+	<!--Title-->
+	<title ng-bind="pageTitle"></title>
+	<!--Metadata-->    
+   	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+	<!--Javascript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/ui-router-0.2.10.min.js"></script>
+</head>
+<body>
+	<!--The view-->
+	<div class="container-fluid" ui-view="main"></div>
+	<!--Footer-->
+	<hr>
+	<footer>
+		<p class="text-muted"> All rigth reserved </p>
+	</footer>
+</body>
+</html>
