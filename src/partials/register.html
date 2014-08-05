@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3 rememberme">
+		<h3> <i class="fa fa-clock-o"></i> You caught us before we're ready </h3>
+		<p> We're working hard to put the finishing touches onto our startup. Things are going well and
+			it should be ready soon. If you like us to send you a reminder when we're ready, just put your
+			email bellow:
+		</p>		
+	</div>
+	<div class="col-xs-10 col-sm-6 col-md-4 col-xs-offset-1 col-sm-offset-3 col-md-offset-4 rememberme">
+		<div class="alert alert-success" ng-show="registered"> <b>Success!</b> Your e-mail was successfully registered. <i class="fa fa-check"></i></div>
+		<form name="input" role="form">
+			<div class="input-group" ng-hide="registered">
+				<input 
+					type="email" 
+					class="form-control" 
+					placeholder="Your e-mail"
+				    ng-model="user.email"
+			        name="email"
+			        required
+			        ng-pattern="pattern">
+				<span class="input-group-btn">
+			        <button class="btn btn-primary" type="submit" ng-click="register(user.email)"><i class="fa fa-paper-plane-o"></i>&nbsp; Remind me</button>
+			    </span>
+			</div>
+		</form>
+	</div>
+</div>
+

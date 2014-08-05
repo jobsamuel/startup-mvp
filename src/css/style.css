@@ -1,0 +1,140 @@
+.main {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.header {
+	margin-top: 5%;
+}
+
+.header h1 {
+	text-align: center;
+	font-size: 45px;
+}
+
+.header h1 a {
+	color: #000; 
+	text-decoration: none;
+	
+}
+
+.steps {
+	text-align: center;
+}
+
+.register {
+	margin-top: 10%;
+	margin-bottom: 10%;
+	clear: both;
+}
+
+.register .btn {
+	border: 1px solid #2CB04B;
+	background-color: transparent;
+	color: #2CB04B;
+	padding: 10px;	
+}
+
+.register .btn:hover,
+.register .btn:focus,
+.register .btn:active {
+	color: #fff;
+	background-color: #2CB04B;
+	border-color: #2CB04B;
+}
+
+.rememberme h3 {
+	text-align: center;
+}
+
+.rememberme p {
+	text-indent: 30px;
+	text-align: justify;
+	margin-top: 5%;
+}
+
+.rememberme form {
+	margin-top: 5%;
+}
+
+.rememberme .alert {
+	text-align: center;
+}
+
+footer {
+	text-align: right;
+	position: fixed;
+	bottom: 0%;
+	right: 1%;
+}
+
+
+/* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+
+.sample[ui-view]{
+ height: 65px; 
+}
+
+.ui-view-container {
+  position: relative;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1; 
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}
+
+
+@media (max-width:767px) {
+	
+	.header h1 {
+		font-size: 30px;
+	}
+
+	.steps h2 {
+		font-size: 24px;
+	}
+
+	footer {
+		font-size: 12px;
+	}
+
+	.rememberme h3 {
+		font-size: 20px;
+	}
+
+}
