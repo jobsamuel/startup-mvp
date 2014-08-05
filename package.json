@@ -1,0 +1,32 @@
+{
+  "name": "startup-mvp",
+  "version": "0.0.0",
+  "description": "Startup MVP's source code",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jobsamuel/carrito-mvp.git"
+  },
+  "keywords": [
+    "statup",
+    "template",
+    "mvp"
+  ],
+  "author": "Jobsamuel Núñez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jobsamuel/carrito-mvp/issues"
+  },
+  "homepage": "https://github.com/jobsamuel/carrito-mvp",
+  "dependencies": {
+    "firebase": "^1.0.18",
+    "express": "^4.7.4",
+    "body-parser": "^1.5.2",
+    "logfmt": "^1.1.2",
+    "mandrill-api": "^1.0.40"
+  }
+}
