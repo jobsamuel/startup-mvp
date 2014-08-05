@@ -1,6 +1,4 @@
 
-
-
 ////////////////////////////
 ///////// Modules /////////
 ////////////////////////// 
@@ -96,7 +94,7 @@ var send_email = function (email, time) {
 
 // Store registrations in an database.
 
-/*var ref = new Firebase('<FIREBASE_URL>'); // Firebase reference (https://www.firebase.com/docs/web/guide/understanding-data.html)
+var ref = new Firebase('<FIREBASE_URL>'); // Firebase reference (https://www.firebase.com/docs/web/guide/understanding-data.html)
 
 ref.auth('<FIREBASE_SECRET>', function(error) { // Firebase authentication token (https://www.firebase.com/docs/web/guide/simple-login/custom.html)
   if(error) {
@@ -123,7 +121,7 @@ ref.child('unknown_provider').on("value", function (snapshot) {
 	ref.child('unknown_provider_counter').set(counter);
 	console.log("Unknown emails registered: " + counter);
 
-});*/
+});
 
 
 
