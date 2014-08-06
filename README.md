@@ -20,20 +20,27 @@ Furthermore, you need to have installed [Node] (http://nodejs.org/) and [npm] (h
 Open your console and type:
 
 `$ git clone https://github.com/jobsamuel/startup-mvp.git`
+
 `$ npm install`
 
 ### Configuration
 
 - **Firebase** 
 	- Go to *src/* and open *server.js*, then type your [Firebase URL] (https://www.firebase.com/docs/web/guide/understanding-data.html) here: 
+	
 	`var ref = new Firebase('<FIREBASE_URL>');`
+
 	- Go to *src/* and open *server.js*, then paste your [Firebase Secret] (https://www.firebase.com/docs/web/guide/simple-login/custom.html) here: `ref.auth('<FIREBASE_SECRET>'`
 - **Mandrill**
 	- Go to *src/* and open *server.js*, then paste your [Mandrill API KEY] (http://help.mandrill.com/entries/21714881-How-do-I-access-Mandrill-for-sending-email-) here: 
-	`var m = new mandrill.Mandrill('<MANDRILL_API_KEY>');` 
+	
+	`var m = new mandrill.Mandrill('<MANDRILL_API_KEY>');`
+
 - **Keen IO**
 	- Go to *src/* and open `index.hmtl`, then paste your [Keen IO Project ID and API KEY] (https://github.com/keenlabs/keen-js/wiki/Getting-Started) here: 
+	
 	`var client=new Keen({projectId:"<PROJECT_ID",writeKey:"WRITE_KEY"})`
+
 - **Google Analytics**
 	- Go to *src/* and open `index.hmtl`, then paste your [Google Analytics Tracking ID] (https://support.google.com/analytics/answer/1008080?hl=en) here: `ga('create', '<TRACKING_ID>', 'auto');`
 
