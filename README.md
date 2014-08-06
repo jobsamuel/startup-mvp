@@ -2,6 +2,10 @@
 
 Following the [Lean Startup] (http://theleanstartup.com/) philosophy, **Startup MVP** aims to validate a business idea in order to keep developing the right product. Offering a useful template to show your idea and collect data of possible customers, it might help you to answer a simple hypothesis: *Are people interested enough in my idea to keep developing it?*
 
+# Demo
+
+Basically, **startup-mvp** is the source code of my own startup. [Briffly] (http://www.briffly.com/), my startup, was made using this template; I just added some style on it according to my project necessities. I invite you to take look and get inspired with this [demo] (http://www.briffly.com/).
+
 # Getting Started
 
 ### Pre-requisites
@@ -62,7 +66,7 @@ Then, open this url `http://127.0.0.1:8080/` in your browser. Now, you should se
 
 ![alt tag] (http://i.imgur.com/UVbo1Iq.png)
 
-**Congratulations!**
+**Congratulations! Your startup-mvp is ready to be hacked!**
 
 ### Build with Grunt
 
