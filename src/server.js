@@ -27,7 +27,7 @@ var mandrill = require('mandrill-api/mandrill');
 
 var m = new mandrill.Mandrill('<MANDRILL_API_KEY>');
 
-var send_email = function (email, time) {
+var send_email = function (email) {
 
   var template_name = "<TEMPLATE_NAME>"; // You need to create a mandrill template (https://mandrillapp.com/api/docs/)
   var template_content = [{
@@ -152,7 +152,7 @@ app.post('/signup', function(req, res) {
 
   	ref.child('known_provider').push({email: req.body.email}); // Sync data with Firebase.
   	
-    send_email(req.body.email, req.body.t);
+    send_email(req.body.email);
 
   } else {
 

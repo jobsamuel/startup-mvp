@@ -45,8 +45,7 @@ angular.module('app', ['ui.router', 'ngAnimate'])
 
 	factory.registration = function (email) {
 
-		var t = new Date().getHours();
-		var data = {email: email, t: t}; 
+		var data = {email: email}; 
 
 		return $http.post('http://127.0.0.1:8080/signup', data) // Change URL before deploy.
 			.success(function(callback) {
